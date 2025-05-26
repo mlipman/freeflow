@@ -1,24 +1,13 @@
-Welcome to the NextJS base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
+devnotes:
 
-## Getting Started
+may 26, 2025
+repurposed an old commit from likelylogs so i have a clean nextjs project
+git clone likelylogs into a new folder (freeflow), checkout the desired commit
+`git branch -f main` to go from detached head to commited main (then checkout main)
+fix the origin with `git remote remove origin` then add new freeflow repo in github ui
+then `git remote add origin git@github.com:mlipman/freeflow.git` and `git push -u origin main` and that's about it
 
-Hit the run button to start the development server.
+`npm run dev` to run dev
+`npm run build` also important because that gets run before deploy.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on `/api/hello`. This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Productionizing your Next App
-
-To make your next App run smoothly in production make sure to deploy your project with [Repl Deployments](https://docs.replit.com/hosting/deployments/about-deployments)!
-
-You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.
+todo: setup vercel project with auto-deploy on github push and cloudflare connection from mlipman.com/freeflow
